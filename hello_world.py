@@ -62,3 +62,25 @@
 #     tax = 0.07
 
 # print(f"total: {price - tax}")
+
+amount = input("Enter amount: ")
+amount = float(amount)
+tax = 0.0
+
+country = input("Enter country: ")
+if country.lower() == "canada":
+    state = input("Enter state: ")
+
+    # if state.lower() == "alberta" or state.lower() == "nunavut" or state.lower() == "yukon":
+    #     tax = 0.05
+    if state.lower() in ("alberta", "nunavut", "yukon"):
+        tax = 0.05
+    elif state.lower() == "ontario":
+        tax = 0.13
+    else:
+        tax = 0.15
+    print(f"tax = { tax }, total = { amount + tax }")
+    
+else:
+    print(f"tax = { tax }, total = { amount }")
+
