@@ -62,25 +62,71 @@
 #     tax = 0.07
 
 # print(f"total: {price - tax}")
+# amount = input("Enter amount: ")
+# amount = float(amount)
+# tax = 0.0
 
-amount = input("Enter amount: ")
-amount = float(amount)
-tax = 0.0
+# country = input("Enter country: ")
+# if country.lower() == "canada":
+#     state = input("Enter state: ")
 
-country = input("Enter country: ")
-if country.lower() == "canada":
-    state = input("Enter state: ")
-
-    # if state.lower() == "alberta" or state.lower() == "nunavut" or state.lower() == "yukon":
-    #     tax = 0.05
-    if state.lower() in ("alberta", "nunavut", "yukon"):
-        tax = 0.05
-    elif state.lower() == "ontario":
-        tax = 0.13
-    else:
-        tax = 0.15
-    print(f"tax = { tax }, total = { amount + tax }")
+#     # if state.lower() == "alberta" or state.lower() == "nunavut" or state.lower() == "yukon":
+#     #     tax = 0.05
+#     if state.lower() in ("alberta", "nunavut", "yukon"):
+#         tax = 0.05
+#     elif state.lower() == "ontario":
+#         tax = 0.13
+#     else:
+#         tax = 0.15
+#     print(f"tax = { tax }, total = { amount + tax }")
     
-else:
-    print(f"tax = { tax }, total = { amount }")
+# else:
+#     print(f"tax = { tax }, total = { amount }")
+# gpa = float(input("Your GPA? "))
+# lowest_grade = float(input("Your lowest grade? "))
+
+# if gpa >= .85 and lowest_grade >= .70:
+#     print("Well Done! You made the Honour Roll")
+# person = {
+#     "name": "bob",
+#     "age": 23,
+#     "is-alive": True, 
+#     "address": {
+#         "street": "B.P.Road",
+#         "district": "Jorhat",
+#         "pin": 785001
+#     }
+# }
+
+# person["address"]["district"] = "Tinisukia"
+# print(person["address"])
+# my_list = [{"type": "dict"}]
+# my_list.append("bob")
+# my_list.append(23)
+# my_list.append(True)
+# my_list.reverse()
+# print(my_list[3])
+# people = ["bob", "ram", "tiki"]
+# i = 0
+# while i < len(people):
+#     print(people[i])
+#     i = i + 1
+# for name in people:
+#     print(name)
+# for name in range(0, 10, 2):
+#     print(name)
+# from datetime import datetime
+
+# def print_log(task_name):
+#     print(f"{ task_name } completed")
+#     print(datetime.today())
+#     print()
+
+# first_name = "Bill"
+# print_log("NAME ASSIGNED")
+
+# for i in range(0, 10):
+#     print(i)
+
+# print_log("LOOP")
 
