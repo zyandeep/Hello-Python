@@ -127,6 +127,28 @@
 
 # for i in range(0, 10):
 #     print(i)
-
 # print_log("LOOP")
+# Returns UPPER_CASE, by default
+# def get_initials(name, to_lower = False):
+#     letter = name[0 : 1]
 
+#     if to_lower:
+#         letter = letter.lower()
+#     else:
+#         letter = letter.upper()
+    
+#     return letter
+# first_name = input("First name: ")
+# last_name = input("Last name: ")
+# print(
+#     f"Hello {get_initials(first_name)}.{get_initials(name=last_name, to_lower=True)}."
+# )
+# import my_module
+# from my_module import *
+# my_module.display("test message", True)
+# display("another message", is_warning=True)
+
+from my_module import display
+
+display("test message")
+display("hello world", True)
