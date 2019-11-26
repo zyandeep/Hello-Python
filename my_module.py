@@ -8,4 +8,3 @@ def display(msg, is_warning=False):
 
     print(Fore.BLUE + msg)
     print()
-

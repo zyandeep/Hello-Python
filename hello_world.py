@@ -147,8 +147,28 @@
 # from my_module import *
 # my_module.display("test message", True)
 # display("another message", is_warning=True)
+# from my_module import display
+# display("test message")
+# display("hello world", True)
 
-from my_module import display
+from dotenv import load_dotenv
+load_dotenv()
+import requests
+import os
 
-display("test message")
-display("hello world", True)
+response = requests.post(os.getenv("URL"), json={ 
+    "name": "bob", "age": 23, "is-alive": False 
+    })
+
+# response = requests.get("https://reqres.in/api/users?page=1")
+response.raise_for_status()
+print(response.status_code)
+print(response.headers["Content-Type"])
+
+# users = response.json()["data"]
+# print(f"Name: { data['first_name'] } { data['last_name'] }")
+# print(f"Email: { data['email'] }")
+# for user in users:
+#     print(f"{ user['first_name'] } : { user['email'] }")
+
+print(response.text)
