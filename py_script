@@ -1,6 +1,89 @@
 #! /usr/bin/python3.8
 
-name = "Bob"
-age = 23
+# name = "Bob"
+# age = 23
+# print(f"Hello, {name}. You're {age}.")
+# msg = "bob"
+# def my_func():
+#     global msg
+#     msg = "Hello World!"        # Local "msg" variable
+#     print(msg)
+# my_func()
+# print(msg)
 
-print(f"Hello, {name}. You're {age}.")
+# name = input("Enter Name: ")
+
+# no_error = True
+
+# while no_error:
+#     age_str = input("Enter Age: ")
+
+#     try:
+#         age = int(age_str)
+#         print(f"{name}, in 10 years, you will be {age + 10}")
+        
+#         no_error = False
+#     except:
+#         print("INVALID AGE")
+# x = 1
+
+# while x <= 10:
+#     # if x == 7:
+#     #     break
+#     print(x)
+#     x+=1
+# else:
+#     print("inside else... ", x)
+
+# print("outside while")
+
+# text = "This is a sentence"
+
+# for c in text:
+#     print(c, type(c))
+# else:
+#     print("inside else:", c)
+# text = input("Enter some text:\n")
+# my_file = open("first.txt", "x")
+# my_file.write(text)
+# my_file.close()
+# print("You are in: ", os.getcwd())
+# print("Contents: \n")
+# os.system("ls -lh")
+# input("Rename?")
+# FILES = ("first.txt", "second.txt")
+# for item in FILES:
+#     if os.path.isfile(f"./{item}"):
+#         if item == FILES[0]:
+#             os.rename(item, FILES[1])
+#             break
+#         else:
+#             os.rename(item, FILES[0])
+#             break
+# os.system("ls")
+# import os
+# filename = input("Enter file name: ")
+# if os.path.isfile(filename):
+#     print(f"File {filename} exist")
+# else:
+#     print(f"Creating file... {filename}")
+#     os.system(f"touch {filename}")
+#     os.system("ls")
+
+# try:
+#     file_handler = open("file.txt", "r")
+# except FileNotFoundError as e:
+#     print(e)
+#     exit(1)
+# text = file_handler.read()
+# print(text)
+# try:
+#     file_handler = open("file.txt", "a")
+# except FileNotFoundError as e:
+#     print(e)
+#     exit(1)
+# MOVIES = ("bob", "john", "ram")
+# for item in MOVIES:
+#     file_handler.write(item)
+#     file_handler.write("\n")
+# file_handler.close()
