@@ -1,3 +1,6 @@
+POUND_TO_KG = 0.453592
+
+
 from colorama import init, Fore, Style
 init()
 
@@ -8,3 +11,4 @@ def display(msg, is_warning=False):
 
     print(Fore.BLUE + msg)
     print()
+    
