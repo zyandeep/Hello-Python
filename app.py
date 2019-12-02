@@ -172,5 +172,48 @@
 # number_str = input("Enter a number: ")
 # for item in number_str:
 #     print(number_to_text.get(item, "UNKNOWN"), end=" ")
-
-
+# import my_module
+# text = input(">")
+# for word in text.strip().split(" "):
+#     print(
+#         my_module.get_emoji(word),
+#         end=" "
+#     )
+# print()
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def talk(self):
+#         print("#blah #blah #blah")
+#         print(f"{self.name} is talking LIKE CRAZY!")
+# bob = Person("Bob")
+# bob.talk()
+# john = Person("John")
+# john.talk()
+# import my_pkg.test_mod
+# from my_pkg import test_mod
+# from my_pkg.test_mod import Animal
+# class Rabbit(Animal):
+#     def info(self):
+#         print(f"Animal's name: {self.name}")
+# r = Rabbit("sammy")
+# r.info()
+# r.walk()
+# import random
+# for item in range(3):
+#     # print(random.random())
+#     print(random.randint(10, 20))
+# print(random.choice(["bob", "john", "ram", "marry"]))
+# NUMBERS = (1, 2, 3, 4, 5, 6)
+# class Dice:
+#     def roll(self):
+#         return (random.choice(NUMBERS), random.choice(NUMBERS))
+# print(Dice().roll())
+# import pathlib
+# path = pathlib.Path()
+# for item in path.rglob("*.py"):
+#     print(item)
+# print(path.home())
+# print(path.read_text())
+# print(path)

@@ -1,14 +1,24 @@
-POUND_TO_KG = 0.453592
+# POUND_TO_KG = 0.453592
+# from colorama import init, Fore, Style
+# init()
 
+# def display(msg, is_warning=False):
+#     if is_warning:
+#         print(Fore.RED + Style.BRIGHT + "THIS IS A WARNING!")
+#         print(Style.RESET_ALL)
 
-from colorama import init, Fore, Style
-init()
+#     print(Fore.BLUE + msg)
+#     print()
 
-def display(msg, is_warning=False):
-    if is_warning:
-        print(Fore.RED + Style.BRIGHT + "THIS IS A WARNING!")
-        print(Style.RESET_ALL)
+emojis_dict = {
+    ":)": "😃",
+    ":(": "😔",
+    ":|": "😑",
+    ";)": "😉",
+    "|-O": "😴"
+}
 
-    print(Fore.BLUE + msg)
-    print()
+def get_emoji(word):
+    # Using a VS CODE feature 
     
+    return emojis_dict.get(word, word)
