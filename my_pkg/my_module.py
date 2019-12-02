@@ -22,3 +22,10 @@ def get_emoji(word):
     # Using a VS CODE feature 
     
     return emojis_dict.get(word, word)
+
+def comma_joiner(word_list):
+    for item in word_list:
+        index = word_list.index(item)
+        word_list[index] = str(item)
+    
+    return ",".join(word_list)
