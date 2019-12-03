@@ -80,14 +80,27 @@
     
 #     for item in result:
 #         print(item.group())
- 
-import re
-
-text = "192.168.43.11"
-
+# import re
+# text = "192.168.43.11"
 # x = re.sub(r"tom[ea]toes", "banana", text, flags=re.IGNORECASE)
 # for x in re.split(r"", text, flags=re.IGNORECASE):
 #     print(x)
+# for x in re.split(r"\.", text):
+#     print(x)
+# users = ["bob", "ram", "bob", "good", "good", "bad"]
+# text = "bobrambobgoodgoodbad"
+# counts = {}
+# for item in text:
+#     counts[item] = counts.get(item, 0) + 1
+# print(counts)
+# import csv
+# with open("./sample_csv.csv", "r") as file:
+    # csv_reader = csv.DictReader(file)
+    # for row in csv_reader:
+    #     pass
+    # else:
+    #     # ROW CONTAINS THE LAST RECORD
+    #     print(row.keys())
+    #     print(row.values())
+    # csv_reader = csv.reader(file, delimiter=",")
 
-for x in re.split(r"\.", text):
-    print(x)
