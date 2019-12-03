@@ -1,3 +1,5 @@
+#! /usr/bin/python3.8
+
 # text = "Madam"
 # x = list(text)
 # x.reverse()
@@ -47,10 +49,45 @@
 # path = pathlib.Path("./.vscode")
 # path.rmdir()
 
-import sys
+# import sys
 
-# READING FROM THE STDIN
-text = sys.stdin.read()
+# # READING FROM THE STDIN
+# text = sys.stdin.read()
 
-# WRITING TO THE STDOUT
-sys.stdout.write(text)
+# # WRITING TO THE STDOUT
+# sys.stdout.write(text)
+# res = os.system("ls -lh ./bob")
+# print(res)
+# import os
+# res = os.system("ping -c 1 abc.com")
+# print(res)
+# res = subprocess.call(["ls", "-lh"])
+# print(res)
+# import subprocess
+# import sys
+# for item in sys.stdin:
+#     item = item.replace("\n", "")
+#     result = subprocess.run(["ping", "-c 2", item], capture_output=True)
+
+#     if result.returncode == 0:
+#         sys.stdout.write(f"{item} => UP AND RUNNING" + "\n")
+# import sys
+# src = sys.argv[1]
+
+# with open(src, "r") as file:
+#     text = file.read()
+#     result = re.finditer(r"NetworkManager\[\d+\]", text)
+    
+#     for item in result:
+#         print(item.group())
+ 
+import re
+
+text = "192.168.43.11"
+
+# x = re.sub(r"tom[ea]toes", "banana", text, flags=re.IGNORECASE)
+# for x in re.split(r"", text, flags=re.IGNORECASE):
+#     print(x)
+
+for x in re.split(r"\.", text):
+    print(x)
